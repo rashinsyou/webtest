@@ -32,6 +32,13 @@
         zoom: 13,
         center: {lat: 35.710063, lng: 139.810700}
       });
+      
+      // マーカーを設置
+      const myLatlng = {lat: 35.710063, lng: 139.810700};
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map
+      });
 
       // クリックイベントを追加
       map.addListener('click', function(e) {
